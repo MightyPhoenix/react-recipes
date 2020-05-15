@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.App{
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 1fr 8vh;
+  min-height: 100vh;
+  background: black;
+}
+
+.main{
+  margin: 1rem 0.5rem;
+  border-radius: 25px;
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row: 1 2;
+  background: transparent;
+  border: 2px solid #fff;
+  color: white;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.main .head{
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-self: center;
+}
+
+ul{
+  padding: 0;
+  margin:0;
+  background: none;
+  border : 0.0rem solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+li{
+  color: black;
+  background: goldenrod;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  font-weight: 550;
+  font-size: 2.5rem;
+  margin: 0.5rem 0rem;
+  list-style: none;
+  border-radius: 1rem;
+}
+
+.loadmeal{
+  transition: all 0.2s ease-out;
+  text-align: center;
+  margin: 1.2rem;
+  padding: 0.5rem 1.8rem;
+  font-size: 1.8rem;
+  background: white;
+  border-radius: 10px;
+  font-family: 'Shadows Into Light', cursive;
+  border: 2px solid white;
+  color: black;
+
+}
+
+.loadmeal:hover{
+  transition: all 0.2s ease-in;
+  font-weight: 550;
+  margin: 1.2rem;
+  padding: 0.5rem 1.8rem;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+}
+
+.loadmeal::after{
+  border: none;
+}
+
+.loadmeal::before{
+  border: none;
+}
+
+li h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+
+}
+
+li p{
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
+
+li hr{
+  border: 3px dashed black;
+}
+
+footer{
+  margin: 0rem 0.5rem;
+  border: 2px solid white;
+  border-bottom: 0px;
+  border-radius: 25px 25px 0px 0px;
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row: 2 3;
+}
+
+@media only screen and (max-width: 700px){
+  .App{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8vh;
+  min-height: 100vh;
+  background: black;
+  }
+
+  .main{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
